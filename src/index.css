@@ -1,0 +1,59 @@
+*{
+  margin:0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  background-color: rgb(189, 185, 167);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./images//ribbon.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+h3{
+  margin: 30px;
+}
+
+.mainText h1{
+  font-weight: 500;
+  font-size: 200px;
+  margin-left: 30px;
+}
+
+span{
+  font-style: italic;
+}
+
+.about, .work, .contact{
+  position: absolute;
+  top: 100px;
+  margin-left: 200px;
+  /* animation: opacity 1s; */
+  animation: opacity 1s;
+  width: 70vw;
+  height: 70vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  /* box-shadow: 5px 10px 10px white; */
+
+}
+
+@keyframes opacity{
+  from{transform: translateY(-700px);}
+  to{transform: translateY(0px);}
+}
+
+/* @keyframes opacity{
+  from{transform: scale(0); opacity: 0;}
+  to{transform: scale(1); opacity: 1;}
+} */
